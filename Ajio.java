@@ -26,7 +26,7 @@ public class Ajio {
 		driver.findElement(By.xpath("//input[@name='searchVal']")).sendKeys("bags");
 
 		// 2. In the search box, type as "bags" and press enter
-		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		driver.findElement(By.xpath("//button[@type='submit']")).sendKeys(Keys.ENTER);
 		Thread.sleep(1000);
 
 		// 3. To the left of the screen under " Gender" click the "Men"
